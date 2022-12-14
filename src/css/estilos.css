@@ -1,0 +1,35 @@
+* {
+    font-family: Verdana;
+}
+
+.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #ADCCFF;
+    padding: 0.5em;
+}
+
+.logo_image {
+    width: 100px;
+    float: left;
+}
+
+.title_header {
+    padding: 1em;
+}
+
+.datos_pedido {
+    background-color: #40ccbb;
+    padding: 1em;
+}
+
+.datos_cliente {
+    background-color: #55ccff;
+    padding: 1em;
+}
+
+.success {
+    font-weight: bold;
+    color: green;
+}
