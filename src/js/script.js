@@ -10,6 +10,22 @@ $(function() {
     })
 });
 
+$("#tamano").on('change', function() {
+    $.ajax({
+        type: "POST",
+        url: "http://localhost:5000/checksize",
+        data: {
+            tamano: this.value,
+        },
+        success: function (result) {
+            $("#resultado_tamano").text(result);
+            const color = result === 'Disponible' ? 'green' : 'red';
+            $("#resultado_tamano").css('color', color)
+        }
+    });
+        
+});
+
 function compruebaSiTieneValor(elementId) {
     let value = $('#'+elementId).val();
     return value !== ''
