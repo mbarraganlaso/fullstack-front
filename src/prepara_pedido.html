@@ -44,13 +44,15 @@
                 <h2>Datos del pedido</h2>
                 <p>Debe rellenar los siguientes datos sobre el pedido:</p>
                 <p>
-                    <label for="tamaño">Tamaño de la pizza:</label>
-                    <select id="tamaño" name="tamaño">
-                        <option id="pequeña">Pequeña</option>
-                        <option id="mediana">Mediana</option>
-                        <option id="grande">Grande</option>
-                        <option id="xxl">XXL</option>
+                    <label for="tamano">Tamaño de la pizza:</label>
+                    <select id="tamano" name="tamano">
+                        <option value="" selected disabled hidden>Elige una opción</option>
+                        <option id="pequeña" value="S">Pequeña</option>
+                        <option id="mediana" value="M">Mediana</option>
+                        <option id="grande" value="L">Grande</option>
+                        <option id="xxl" value="XXL">XXL</option>
                     </select>
+                    <span id="resultado_tamano"></span>
                 </p>
                 <p>
                     <label>Ingredientes:</label>
